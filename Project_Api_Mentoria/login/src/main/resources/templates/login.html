@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+
+        <meta charset="UTF-8">
+         <title>Login</title>
+
+    <body>
+
+    <div> th: if="${param.error}"
+          Senha ou username inválido!
+    </div>
+
+    <div> th: if="${param.logout}"
+        Você está desconectado!
+    </div>
+
+    <form action="@{/login}" method="post">
+
+        <div>
+            <label >Nome:<input type="text" name="username">/label>
+        </div>
+
+        <div>
+            <label >Função:<input type="text" name="username">/label>
+        </div>
+
+        <div>
+            <label>Senha: <input type="password" name="password">/label>
+        </div>
+
+        <div>
+            <input type="submite" value="Login">
+        </div>
+
+    </form>
+
+    </body>
+</html>
